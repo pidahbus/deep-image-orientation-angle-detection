@@ -1,1 +1,1 @@
-# deep-image-orientation-angle-detection
+# Deep Image Orientation Angle Detection
