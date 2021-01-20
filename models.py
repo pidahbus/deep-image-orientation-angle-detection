@@ -93,6 +93,6 @@ class OAD:
         :return: prediction angle as array
         """
         logger.info("Prediction Started")
-        test_gen = self._prepare_generator(test_df_path, test_dir_path)
+        test_gen = self._prepare_generator(test_df_path, test_dir_path, batch_size)
         preds = self.model.predict(test_gen, batch_size=batch_size)
         return preds
