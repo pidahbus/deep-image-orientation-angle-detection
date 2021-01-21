@@ -22,7 +22,8 @@ Sample prediction of orientation angles given images has been shown in [notebook
 
 
 ## Results
-This method used the combination of CNN and a custom angluar loss function specially designed for angles that lead to a very promising result with respect to the recent works in this domain. Below is the result table picked from the above-mentioned academic [paper](https://arxiv.org/abs/2007.06709).
+This method used the combination of CNN and a custom angluar loss function specially designed for angles that lead to a very promising result with respect to the recent works in this domain. Below is the result table picked from the above-mentioned academic [paper](https://arxiv.org/abs/2007.06709). It shows comparison between our OAD model and other image orientation angle estimation techniques. It is clearly seen that our OAD model outperforms other baseline methods and achieve very good results.
+
 
 | Task                                  | OAD-30 | Net-30 | OAD-45 | Net-45 | OAD-360 | Net-360 | Hough-var | Hough-pow | Fourier   |      
 | ------------------------------------- |:------:|:------:|:------:|:------:|:-------:|:-------:|:---------:|:---------:|:---------:|
