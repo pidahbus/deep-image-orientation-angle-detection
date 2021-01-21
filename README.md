@@ -33,7 +33,21 @@ This method used the combination of CNN and a custom angluar loss function speci
 
 
 
-Below are some model predictions on natural images,
+Below are some model predictions on natural images. These images are the outputs of OAD-30, OAD-45 and OAD-360 models respectively.
+
+
+![](https://github.com/pidahbus/deep-image-orientation-angle-detection/blob/main/images/Picture5.png)
+
+**(a) Input Image (b) OAD-30 Model prediction (c) Ground Truth. These are some examples of results from the OAD-30 Model output. Some images are cropped to remove the black portion due to rotation.**
+
+
+![](https://github.com/pidahbus/deep-image-orientation-angle-detection/blob/main/images/Picture6.png)
+
+**(a) Input Image (b) OAD-45 Model prediction (c) Ground Truth. These are some examples of results from the OAD-45 Model output. Some images are cropped to remove the black portion due to rotation.**
+
+![](https://github.com/pidahbus/deep-image-orientation-angle-detection/blob/main/images/Picture7.png)
+
+**(a) Input Image (b) OAD-360 Model prediction (c) Ground Truth. These are some examples of good results from the OAD-360 Model output. Some images are cropped to remove the black portion due to rotation.**
 
 
 ## Saved Model
