@@ -51,7 +51,7 @@ Below are some model predictions on natural images. These images are the outputs
 
 
 ## Saved Model
-You can download a trained Keras model [here](https://google.com). This model is trained on artifically created dataset using almost all of the images of Microsoft COCO. Additionally, this model is trained on task 3 that means this model is capable to predict orientation of images between 0° to 359° with test MAE of 8.38°. You can use this model for finetuning or model predictions using the above-mentioned methods.
+You can download a trained Keras model [here](https://drive.google.com/file/d/1gI20xkDOz37mz1PuXZCdcVI2x79rAFRd/view?usp=sharing). This model is trained on artifically created dataset using almost all of the images of Microsoft COCO. Additionally, this model is trained on task 3 that means this model is capable to predict orientation of images between 0° to 359° with test MAE of 8.38°. You can use this model for finetuning or model predictions using the above-mentioned methods.
 
 
 ## Citation
