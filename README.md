@@ -26,9 +26,9 @@ This method used the combination of CNN and a custom angluar loss function speci
 
 | Task                                  | OAD-30 | Net-30 | OAD-45 | Net-45 | OAD-360 | Net-360 | Hough-var | Hough-pow | Fourier   |      
 | ------------------------------------- |:------:|:------:|:------:|:------:|:-------:|:-------:|:---------:|:---------:|:---------:|
-| Test images with ±30 degree rotation  |  1.52  |   3    |   -    |   -    |    -    |    -    |  11.41    |  10.62    |   10.66   |
-| Test images with ±45 degree rotation  |   -    |   -    |  1.95  |  4.63  |    -    |    -    |  16.92    |  13.06    |   16.51   |
-| Test images with ±180 degree rotation |   -    |   _    |   -    |   -    |   8.38  |  20.97  |     -     |     -     |     -     |
+| Test images with ±30 degree rotation  |**1.52**|   3    |   -    |   -    |    -    |    -    |  11.41    |  10.62    |   10.66   |
+| Test images with ±45 degree rotation  |   -    |   -    |**1.95**|  4.63  |    -    |    -    |  16.92    |  13.06    |   16.51   |
+| Test images with ±180 degree rotation |   -    |   _    |   -    |   -    |**8.38** |  20.97  |     -     |     -     |     -     |
 
 
 
