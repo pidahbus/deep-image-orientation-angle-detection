@@ -7,4 +7,4 @@ TEST_DIR_PATH="./data/test"
 
 BATCH_SIZE=32
 MODEL_SAVE_DIR="./checkpoint"
-INIT_CHECKPOINT="./checkpoint/1.h5"
+INIT_CHECKPOINT="../../Dissertation/model.h5"

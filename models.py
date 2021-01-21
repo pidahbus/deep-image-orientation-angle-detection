@@ -43,7 +43,10 @@ class OAD:
 
         :param checkpoint: saved model path
         """
-        self.model =tf.keras.models.load_model(checkpoint, custom_objects={"angular_loss_mae":angular_loss_mae})
+        try:
+            self.model = tf.keras.models.load_model(checkpoint, custom_objects={"angular_loss_mae":angular_loss_mae})
+        except:
+            self.model = tf.keras.models.load_model(checkpoint, custom_objects={"angle_rmse": angular_loss_mae})
 
 
     def fit(self, train_dir_path, valid_dir_path, train_df_path, valid_df_path,
@@ -61,7 +64,10 @@ class OAD:
         if initial_checkpoint:
             logger.info("Loading Model from initial checkpoint")
             self.load_model(initial_checkpoint)
-            epoch = int(initial_checkpoint.split("/")[-1].replace(".h5", ""))
+            try:
+                epoch = int(initial_checkpoint.split("/")[-1].replace(".h5", ""))
+            except:
+                epoch=0
 
         else:
             logger.info("Building Model")
