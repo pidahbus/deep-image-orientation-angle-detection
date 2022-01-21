@@ -6,6 +6,8 @@ Image Orientation Angle Detection Model (Deep-OAD) is a deep learning model to p
 ## Data Preparation
 Sample data has been provided in the data folder. The sample data is split in train, valid and test. For each set one CSV and one image directory must be created. Image directory contains the images. CSV should has two columns, image column contains the image name and angle column contains the true orientation angle of the image. 
 
+To generate rotated image you can take a reference from here, https://www.pyimagesearch.com/2017/01/02/rotate-images-correctly-with-opencv-and-python/
+
 ## Model Training
 Model training is very straightforward. Change the parameters in [config.py](https://github.com/pidahbus/deep-image-orientation-angle-detection/blob/main/config.py) and run in the terminal,
 ```
