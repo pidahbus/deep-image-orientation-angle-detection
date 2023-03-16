@@ -2,7 +2,7 @@
 
 *Annoucement: Version 2 of Deep Image Orientation Angle Detection is out with the following features:*
 
-- *VIT Implementation*
+- *VIT Implementation with SOTA results*
 - *Seamless training and inference from terminal*
 - *Web application*
 - *Dynamic data preparation*
