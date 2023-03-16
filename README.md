@@ -67,7 +67,7 @@ Upon running the command the predicted orientation angle will be printed in the 
 
 ![](./static/images/predict_terminal.png)
 
-*Note: This inference method is not optimal as everytime during the inference the model file has to be loaded which takes signficant amount of time.*
+*Note: This inference method is not optimal as everytime during the inference the model file has to be loaded which takes signficant amount of time. For bulk prediction please follow this [notebook](./notebooks/inference.ipynb)*.
 
 ## Results
 This method used the combination of CNN and a custom angluar loss function specially designed for angles that lead to a very promising result with respect to the recent works in this domain. Below is the result table picked from the above-mentioned academic [paper](https://arxiv.org/abs/2007.06709). It shows comparison between our OAD model and other image orientation angle estimation techniques. It is clearly seen that our OAD model outperforms other baseline methods and achieve very good results in terms of test mean absolute error (MAE).
