@@ -14,14 +14,17 @@ class Inference:
         self.vit_model = load_vit_model()
 
     
-    def predict(self, model_name, image_path):
+    def predict(self, model_name, image_path, postprocess_and_save=True):
         X = preprocess(model_name, image_path)
         
         y = self.vit_model.predict(X)[0][0]
         
         logger.info(f"Predicted angle is: {y} degree")
         pred_angle = -y
-        postprocess(image_path, pred_angle, 400)
+        if postprocess_and_save:
+            postprocess(image_path, pred_angle, 400)
+        return y
+
         
         
 
