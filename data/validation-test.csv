@@ -1,0 +1,5 @@
+image,angle,mode
+1.jpg,20,valid
+2.jpg,50,valid
+3.jpg,73,test
+4.jpg,94,test

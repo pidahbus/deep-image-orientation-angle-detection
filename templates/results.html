@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block body %}
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<div clas="container">
+    <div class="row">
+      <div class="col">
+          <h1 id="main-title">Results</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" style="padding-left: 10%;">
+          {% if session.username %}
+          <div class="row">
+            <div class="column">
+              <img src="{{ url_for('get_input_images', filename=filename) }}" alt="Input Image" style="margin: 0px 200px 0px 0px">
+              <div class="caption"><h3>Input Image</h3></div>
+            </div>
+            <div class="column">
+              <img src="{{ url_for('get_pred_images', filename=filename) }}" alt="Correct Image">
+              <div class="caption"><h3>After Orientation Correction</h3></div>
+            </div>
+          </div>
+            
+          {% else %}
+            <h6>You need to login to access this page</h6>
+
+          {% endif %}
+
+      </div>
+    </div>
+</div>
+
+{% endblock %}

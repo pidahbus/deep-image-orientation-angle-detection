@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+<div clas="container">
+  <div class="row">
+    <div class="col-md-12" style="padding-left: 10%;">
+      <br>
+      <br>
+        {% if session.username %}
+          Welcome to the web application page of Deep Image Orientation Angle Detection.
+        {% else %}
+          Welcome to the web application page of Deep Image Orientation Angle Detection. Kindly Login to continue.
+        {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+
+  
+  <br>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

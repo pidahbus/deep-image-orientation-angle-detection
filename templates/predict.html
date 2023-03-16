@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block body %}
+<div clas="container">
+    <div class="row">
+      <div class="col">
+          <h1 id="main-title">Correct Orientation Angle of Images</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" style="padding-left: 10%;">
+          {% if session.username %}
+        <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+            <dl>
+                <dt>Select the Model</dt>
+                <select name="model" style="width: 250px !important; min-width: 100px; max-width: 250px;" >
+                    {% for type in ["ViT"] %}
+                        <option value="{{type}}" SELECTED>{{type}}</option>
+                    {% endfor %}
+                </select>
+                <br>
+                <br>
+            </dl>
+            <br>
+            <dt>Upload the Image</dt>
+            <p><input type="file" name="file"></p>
+            <br>
+            <br>
+            <br>
+
+            <input type="submit" value="Correct Orientation">
+        </form>
+          {% else %}
+            <h6>You need to login to access this page</h6>
+
+          {% endif %}
+
+      </div>
+    </div>
+</div>
+
+{% endblock %}

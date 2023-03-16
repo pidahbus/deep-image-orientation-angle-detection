@@ -1,0 +1,48 @@
+<!doctype html>
+<title>Deep Image Orientation Angle Detection</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style4.css') }}" media="screen">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/css/select2.min.css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style5.css') }}" media="screen">
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+          <img id="logo" src="/static/images/redlogo.png" width="auto" height="65px" class="d-inline-block align-top" alt="iitk logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="portal-title">Deep Image Orientation Angle Detection</div>
+          
+    </nav>
+
+
+    <div class="gradientBorder" style="background: linear-gradient(to right, rgb(209, 63, 68), rgb(242, 180, 17));"></div>
+    <div class="navdiv">
+      <div class="metanav">
+        <ul style="list-style: none;">
+
+          
+          {% if not session.username %}
+            <li class="navli"><a class="navlink" href="{{ url_for('login') }}">Login</a></li>
+          {% else %}
+            <li class="navli"><a class="navlink" href="{{ url_for('predict') }}">Predict</a></li>
+            <li class="navli"><a class="navlink" href="{{ url_for('logout') }}">Logout</a></li>
+          {% endif %}
+
+        </ul>   
+        
+      </div>
+    </div>
+  </div>
+
+<div>
+  
+  
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block body %}{% endblock %}
+</div>
+</body>
