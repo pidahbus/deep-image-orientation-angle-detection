@@ -1,6 +1,6 @@
 # Deep Image Orientation Angle Detection
 
-*Annoucement: Deep-OAD V2 is out with the following features:*
+*Annoucement: Deep-OAD V2 is out with the following features,*
 
 - *VIT Implementation with SOTA results*
 - *Seamless training and inference from terminal*
