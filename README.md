@@ -44,7 +44,7 @@ $ python train.py  --weights-save-path=weights/test_weight.h5
 ```
 
 ## Saved Model
-You can download a trained Keras model [here](https://drive.google.com/file/d/1gI20xkDOz37mz1PuXZCdcVI2x79rAFRd/view?usp=sharing). This model is trained on artifically created dataset using almost all of the images of Microsoft COCO. This model is capable to predict orientation of images between 0° to 359° with test MAE of 6.5°. You can use this model for finetuning or model predictions. Please make sure the model file is put under [weights](./weights/) directory during finetuning or inference.
+You can download a trained Keras model [here](https://drive.google.com/file/d/1sdmPmaDhivdHPfn9M9vAkTbiprbPq94e/view?usp=share_link). This model is trained on artifically created dataset using almost all of the images of Microsoft COCO. This model is capable to predict orientation of images between 0° to 359° with test MAE of 6.5°. You can use this model for finetuning or model predictions. Please make sure the model file is put under [weights](./weights/) directory during finetuning or inference.
 
 ## Model Inference
 To predict orientation angle of an image from terminal run the following command,
