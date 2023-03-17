@@ -23,7 +23,14 @@ $ pip install -r requirements.txt
 Then run the following command in the terminal,
 
 ```
-$ python train.py --gpu=<gpu_index_number_for_training> --model-name=<model_name> --train-dir=<path_to_the_train_directory> --validation-dir=<path_to_the_train_directory> --validation-label-path=<path_to_label_csv_path_of_validation_data> --batch_size=<batch_size_for_training> --weights-save-path=<model_weights_save_path> --load-pretrained-weights=<whether_to_load_pretrained_weights>
+$ python train.py \
+--gpu=<gpu_index_number_for_training> \
+--model-name=<model_name> \
+--train-dir=<path_to_the_train_directory> \
+--validation-dir=<path_to_the_train_directory> \
+--validation-label-path=<path_to_label_csv_path_of_validation_data> \
+--batch_size=<batch_size_for_training> --weights-save-path=<model_weights_save_path> \
+--load-pretrained-weights=<whether_to_load_pretrained_weights>
 ```
 
 The arguments are described below,
